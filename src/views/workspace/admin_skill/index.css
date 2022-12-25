@@ -1,0 +1,170 @@
+.admin_skill-header {
+  font-size: 18px;
+  color: #C0C0C0;
+  margin-bottom: 20px;
+}
+
+.admin_skill-card {
+  height: 260px;
+  background: #24262F;
+  box-shadow: inset 0px 0px 1px 0px rgba(125, 125, 125, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.admin_skill-card .title {
+  width: 100%;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.admin_skill-card .title.is_setLine {
+  padding-right: 160px;
+}
+
+.admin_skill-card .title.is_setLine .set-line-status {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.admin_skill-card .title.is_setLine .set-line-status span {
+  margin-right: 10px;
+}
+
+.admin_skill-card .title.is_setLine .admin_apply-status {
+  display: none;
+}
+
+.admin_skill-card .title .admin_apply-status {
+  position: absolute;
+  top: 6px;
+  height: 18px;
+  line-height: 18px;
+  right: 0;
+  width: 160px;
+  display: block;
+  font-size: 18px;
+  text-align: right;
+}
+
+.admin_skill-card .title .admin_apply-status .tag-item {
+  font-size: 14px;
+  border: 1px solid rgba(13, 164, 17, 0.5);
+  background: rgba(13, 164, 17, 0.1);
+  border-radius: 16px;
+  padding: 6px 20px;
+}
+
+.admin_skill-card .title .set-line-status {
+  position: absolute;
+  top: 6px;
+  height: 18px;
+  line-height: 18px;
+  right: 0;
+  width: 160px;
+  display: none;
+  font-size: 14px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.admin_skill-card .title .set-line-status .active {
+  color: #3468FE;
+}
+
+.admin_skill-card .desc {
+  font-size: #C0C0C0;
+  margin-bottom: 20px;
+}
+
+.admin_skill-card .price {
+  width: 100%;
+  display: flex;
+  background: rgba(23, 24, 30, 0.3);
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin_skill-card .price .price-item {
+  width: 30%;
+  flex: auto;
+}
+
+.admin_skill-card .price .util {
+  font-size: 14px;
+  color: #676C7F;
+}
+
+.admin_skill-card .price .number {
+  font-size: 20px;
+  height: 28px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #FF9F03;
+}
+
+.admin_skill-card .other {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin_skill-card .other .other-item {
+  font-size: 14px;
+  color: #C0C0C0;
+  flex: none;
+}
+
+.admin_skill-card .other .other-item span {
+  margin-left: 4px;
+  color: white;
+}
+
+.admin_skill-card .view-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  color: #c0c0c0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin_skill-card .view-home span {
+  margin-left: 4px;
+}
+
+.admin_skill-card .add-icon {
+  line-height: 214px;
+  text-align: center;
+  font-size: 120px;
+  color: #c0c0c0;
+}
+
+.admin_skill-card .add-text {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 0;
+  font-size: 26px;
+  text-align: center;
+  color: #c0c0c0;
+}

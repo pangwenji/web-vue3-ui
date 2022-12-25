@@ -1,0 +1,84 @@
+
+.container-left1{
+  width: 219px;
+  min-width: 219px;
+  height: 100%;
+  font-size: 12px;
+  border-right: 1px solid #353535;
+  background-color: #20222B;
+  color: #ffffff;
+  .file-list1{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #353535;
+
+    .file-list1-icon{
+      display: flex;
+      align-items: center;
+      span{
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+      }
+      span:hover{
+        background-color: #272830;
+      }
+    }
+  }
+  .file-list3{
+    ul{
+      margin-block-start: 0;
+    }
+    ul>li{
+      height: 50px;
+      padding: 6px 0 6px 12px;
+      margin-top: 8px;
+      display: flex;
+      .img-box{
+        width: 40px;
+        height: 40px;
+        background-color: #000000;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        img{
+          width: 40px;
+          max-height: 100%;
+          display: block;
+        }
+      }
+      .info-box{
+        margin: 0 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .file-name{
+          width: 146px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space:nowrap;
+        }
+        .file-bott{
+          color: #9094A6;
+        }
+      }
+    }
+    ul>li:hover{
+      cursor:pointer;
+      background-color: #272830;
+    }
+    ul>.list-active,.list-active:hover{
+      background-color: #272830;
+      border-right: 2px solid #3468FE;
+      .info-box{
+        margin-right: 12px;
+      }
+    }
+  }
+}
+:deep(.el-scrollbar__bar){
+  width: 0;
+}

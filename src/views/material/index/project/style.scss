@@ -1,0 +1,206 @@
+.content-bottom{
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+.content-card {
+  margin-bottom: 12px;
+  position: relative;
+  padding: 15px 12px;
+  height: 90px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 14px;
+  //opacity: 0.3;
+  .close {
+    width: 1em;
+    height: 1em;
+    display: none;
+    margin-right: 4px;
+    margin-top: 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &:hover {
+    background: rgba(28, 29, 36, 0.83);
+    border-radius: 8px;
+
+    .close {
+      display: block;
+      color: #FFFFFF;
+      opacity: 0.83;
+    }
+  }
+
+  .img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #F3F3F3;
+    background-size: 70px;
+    border-radius: 10px;
+  }
+
+  .date {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0px 0px 0px 12px;
+    width: 80%;
+    .title{
+      cursor: pointer;
+      &:hover{
+        text-decoration:underline
+      }
+    }
+    .mod29 {
+      width: 288px;
+      height: 20px;
+      background-image: url('../../../../assets/images/yinyue.png');
+      background-size: 100% 100%;
+    }
+
+    .main48 {
+      width: 38px;
+      height: 22px;
+      background-image: url('../../../../assets/images/more.png');
+      background-size: 100% 100%;
+      margin: 10px 0 0 0px;
+    }
+
+    .word53 {
+      width: 68px;
+      height: 14px;
+      color: rgba(255, 255, 255, 1);
+      font-size: 12px;
+      text-align: left;
+      white-space: nowrap;
+      line-height: 14px;
+    }
+
+    .z {
+      padding: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #212121;
+      line-height: 14px;
+      width: 18px;
+      height: 18px;
+      background: linear-gradient(227deg, #FCE1AE 0%, #FEF6A5 20%, #F4BF44 43%, #FEF4A7 71%, #E3BB51 100%);
+      border-radius: 4px;
+      font-size: 12px;
+      text-align: left;
+      white-space: nowrap;
+      line-height: 12px;
+      margin: 0 0 0 3px;
+    }
+
+    .main50 {
+      height: 18px;
+      background-image: url('../../../../assets/images/shang.png');
+      background-size: 100% 100%;
+      width: 18px;
+      margin: 0 71px 0 4px;
+    }
+
+    .txt31 {
+      width: 12px;
+      height: 12px;
+      color: rgba(33, 33, 33, 1);
+      font-size: 12px;
+      text-align: left;
+      white-space: nowrap;
+      line-height: 12px;
+      margin: 3px 0 0 3px;
+    }
+  }
+
+  .price {
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #F03860;
+    line-height: 14px;
+
+    .section32 {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      //background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngf11d679c2c8d6f6ad8510601f5561bb007a481b875340f896fb550854b205e90) -1px -1px no-repeat;
+      background-image: url("@/assets/images/icon_redDoudou.png");
+      background-size: 20px 19px;
+    }
+
+  }
+
+  .cost {
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 400;
+    color: #BEC0CD;
+    line-height: 12px;
+    margin-top: 5px;
+  }
+
+  .sales {
+    margin: auto auto auto 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.73);
+    line-height: 14px;
+  }
+
+  .icon {
+    margin-top: auto;
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .buy {
+    margin: auto;
+    margin-left: 0px;
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(45deg, #0459FF 0%, #5726DD 100%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tag {
+    //width: 62px;
+    height: 22px;
+    margin-right: 8px;
+    padding: 5px 7px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #4E5262;
+    font-size: 12px;
+    font-weight: 400;
+    color: #C4C9D3;
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.el-col{
+  margin: auto;
+}

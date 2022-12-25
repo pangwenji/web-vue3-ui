@@ -1,0 +1,114 @@
+.download-comment{
+  width: 100%;
+  height: 100%;
+  color: #666A7A;
+  ul{
+    margin-block-start:0;
+    margin-block-end: 0;
+  }
+  .header{
+    width: 100%;
+    height: 56px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #1c1d24;
+    .down-btn {
+      height: 35px;
+      padding: 0 16px;
+      border-radius: 18px;
+    }
+    // span{
+    //   font-size: 16px;
+    //   padding: 10px 20px;
+    //   border-radius: 3px;
+    //   margin: 0 10px;
+    //   color: #ffffff;
+    //   background-color: #000000;
+    // }
+  }
+  .download-content{
+    width: 860px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+      margin: 50px 0 30px;
+      text-align: center;
+      font-weight: 500;
+      color: #000000;
+      font-size: 24px;
+    }
+    .download-info{
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #C5C7D4;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
+      .dinfo-item{
+        padding: 4px 0;
+      }
+    }
+    .item-left{
+      color: #9094A6;
+    }
+    .comment-box{
+      margin-bottom: 20px;
+      border: 1px solid #C5C7D4;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      ul>li{
+        padding: 30px;
+        display: flex;
+        align-items: flex-start;
+        border-top: 1px solid #C5C7D4;
+        .comment-left {
+          width: 50%;
+          text-align: center;
+          img{
+            max-width:400px;
+            max-height:420px;
+          }
+        }
+        .comment-right{
+          margin-left: 30px;
+        }
+        .comment-info{
+          display: flex;
+          flex-direction: column;
+          .comment-info-item{
+            padding: 10px 0;
+          }
+        }
+        .reply-info{
+          padding-top: 20px;
+          margin: 20px 0 0 20px;
+          border-top: 1px solid rgba($color: #C5C7D4, $alpha: .4);
+          .reply-info-item{
+            padding: 6px 0;
+          }
+        }
+      }
+      ul>li:last-child{
+        // border-bottom: 1px solid #a3ccff;
+      }
+    }
+  }
+
+  .attachment-box{
+    display: flex;
+    .attachment-item{
+      margin-top: 6px;
+      width: 50px;
+      height: 36px;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($color: #3c3d46, $alpha: .8);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.main-card{
+  padding: 12px;
+  height: 100%;
+  width: 210px;
+  background: rgba(41,42,48,0.9000);
+  backdrop-filter: blur(2px);
+  //background-color: rgba(41, 42, 48, 0.90);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999999;
+  .title{
+    color: #9094A6;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .menu-item{
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    cursor: pointer;
+    &:hover{
+      background-color: #3956FF ;
+      border-radius: 10px;
+    }
+  }
+
+}
+.menu-enter-active, .menu-leave-active{
+  transition: opacity .5s ease,transform .5s ease;
+}
+.menu-enter-from, .menu-leave-to{
+  opacity: 0;
+  transform: translateX(100%);
+}
+.menu-enter-to, .menu-leave-from{
+  opacity: 1;
+  transform: translateX(0);
+}

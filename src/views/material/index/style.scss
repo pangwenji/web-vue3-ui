@@ -1,0 +1,252 @@
+*{
+  user-select: none;
+}
+.header-content {
+  flex-grow: 1;
+  overflow: hidden;
+  height: 100%;
+  background-color: #0A0B0D;
+  //flex-shrink: 0;
+  padding: 0 24px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid #353535;
+
+
+  .input-box {
+    height: 40px;
+    width: 340px;
+    background: #0A0B0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    .input {
+      :deep(.el-input__inner) {
+        width: 220px;
+        height: 32px;
+        background: #1C1D24;
+        border-radius: 18px;
+        border: 1px solid #30323B;
+      }
+    }
+
+    .preview {
+      position: absolute;
+      right: 110px;
+      top: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      color: #FFFFFF;
+      width: 60px;
+      height: 28px;
+      background: #3D3F50;
+      border-radius: 16px;
+    }
+  }
+
+
+
+  .material-list{
+    min-height: calc(100% - 322px);
+  }
+  .empty{
+    width: 100%;
+    min-height: calc(100% - 322px);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-bottom{
+    width: 100%;
+    bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+:deep(.el-scrollbar__view){
+  height: 100%;
+}
+
+.grid {
+  width: 1em;
+  height: 1em;
+  margin-right: 8px;
+  cursor: pointer;
+  position: absolute;
+  right: 36px;
+  top: 26px;
+}
+
+.pagination-container-box {
+  padding-bottom: 20px;
+}
+
+:deep(.el-scrollbar) {
+  overflow-x: visible;
+  overflow-y: auto;
+}
+:deep(.el-scrollbar__bar){
+  width: 0;
+	height: 0;
+}
+
+.el-scrollbar__wrap::-webkit-scrollbar {
+  display: none
+}
+.copyrightText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.header-content-mid {
+  position: relative;
+  width: 100%;
+  //min-height: 135px;
+  background: rgba(39, 40, 48, 0.7);
+  border-radius: 8px;
+  //opacity: 0.7;
+  padding: 13px 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-content-midTwo {
+  width: 100%;
+  height: 60px;
+  background: #0A0B0D;
+  font-size: 12px;
+  font-weight: 400;
+  color: #CFD2D8;
+  line-height: 18px;
+  padding: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.empty {
+  width: 100%;
+  min-height: calc(100% - 322px);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-bottom {
+  width: 100%;
+  bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.ztag {
+  flex: 0 0 auto;
+
+  img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+}
+
+.buy {
+  margin: auto;
+  margin-left: 0px;
+  font-size: 12px;
+  width: 90px;
+  height: 32px;
+  background: linear-gradient(45deg, #0459FF 0%, #5726DD 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+
+.buy:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.price {
+  //margin: auto;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FF9F03;
+  line-height: 17px;
+  min-width: 80px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+
+  .tongqian {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background-size: 12px 12px;
+  }
+
+  .section32 {
+    background-image: url("@/assets/user/wallet/tongqian.png");
+  }
+
+  .section33 {
+    background-image: url("@/assets/user/wallet/huitongqian.png");
+    opacity: 0.3;
+  }
+}
+
+.icon {
+  margin-top: auto;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  img {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.purchased-box {
+  width: 40px;
+  height: 20px;
+  background: rgba(255, 159, 3, 0.1);
+  //border-radius: 0px 0px 8px 0px;
+  border-top-left-radius: 8px;
+  color: #FF9F03;
+  position: absolute;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}

@@ -1,0 +1,92 @@
+.right-box{
+  flex-grow: 1;
+  overflow: hidden;
+	width: 100%;
+  height: 100%;
+  .container-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}
+.file-list-box{
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: #0A0B0D;
+  .list-header{
+    width: 100%;
+    margin-top: 24px;
+    padding-left: 16px;
+    color: #BEC0CD;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    .fname{
+      width: 48%;
+    }
+    .ftype{
+      width: 10%;
+    }
+    .fsize{
+      width: 10%;
+    }
+    .faddby{
+      width: 10%;
+    }
+    .faddtime{
+      width: 18%;
+    }
+    .fhandle{
+      width: 4%;
+    }
+  }
+  .typetitle{
+    margin-top: 24px;
+    margin-left: 6px;
+    font-size: 14px;
+    opacity: .6;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    span{
+      margin-right: 2px;
+    }
+  }
+}
+
+.list-empty{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+:deep(.file-list-scrollbar){
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.fileinfo-enter-active, .fileinfo-leave-active{
+  transition: opacity .2s ease,transform .2s ease;
+}
+.fileinfo-enter-from, .fileinfo-leave-to{
+  transition: .4s;
+  width: 0;
+  opacity: 0;
+}
+.fileinfo-enter-to, .fileinfo-leave-from{
+  transition: .4s;
+  width: 219px;
+  opacity: 1;
+}
+:deep(.el-overlay-dialog){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

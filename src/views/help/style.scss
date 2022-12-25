@@ -1,0 +1,88 @@
+.main-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  .main-card {
+    padding: 30px 0;
+    height: 100%;
+    width: 55%;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 33px;
+
+
+    .caption {
+      margin-top: 52px;
+      font-size: 17px;
+      font-weight: 400;
+      color: #CFD2D8;
+      line-height: 18px;
+      border-left: 2px solid #3468FE;
+      padding-left: 10px;
+    }
+
+    .part {
+      margin-top: 30px;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px 30px;
+      border-radius: 4px;
+    }
+
+    .list {
+      padding-left: 22px;
+
+      li {
+        list-style-type: disc;
+        font-size: 16px;
+        font-weight: 400;
+        color: #C4C9D3;
+        line-height: 27px;
+        margin-bottom: 20px;
+      }
+    }
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      color: #629FFF;
+      line-height: 33px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  .main-right {
+    width: 15%;
+    height: 100%;
+    background-color: rgb(29 31 34);
+    position: relative;
+
+    .list {
+      position: absolute;
+      top: 160px;
+      width: 160px;
+      height: 300px;
+      padding: 10px;
+
+      li {
+        cursor: pointer;
+        color: rgb(153, 153, 153);
+        height: 30px;
+      }
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flexB{
+  display: flex;
+  justify-content: space-between;
+}

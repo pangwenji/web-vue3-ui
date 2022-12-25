@@ -1,0 +1,36 @@
+:deep(.el-dialog){
+  border-radius: 16px;
+  top:50%;
+  transform:translateY(-60%);
+}
+:deep(.el-dialog__header){
+  display: none;
+}
+:deep(.el-dialog__body) {
+  padding: 20px;
+  .dialog-success-bt{
+    margin: 2px 0;
+    .el-button{
+      height: 38px;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 2px 10px;
+      background-color: #F7F7F7;
+      border-radius: 8px;
+    }
+  }
+  .success-text{
+    font-size: 16px;
+    color: #626262;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+
+  .dialog-title-success{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333539;
+    line-height: 2;
+    display: flex;
+  }
+}

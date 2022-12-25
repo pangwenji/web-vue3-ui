@@ -1,0 +1,136 @@
+.pay-confirm-dialog {
+  .el-dialog__header {
+    padding: 25px 20px 0px 25px
+  }
+
+  .pay-content {
+    .hosting {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333539;
+    }
+    .pay-info {
+      padding: 11px 0;
+    }
+    .material-info {
+      margin: 4px 0 0 16px;
+      .authtype {
+        opacity: 0.6;
+      }
+    }
+    .pay-sum {
+      //height: 90px;
+      background: #F5F6F9;
+      border-radius: 4px;
+      padding: 20px;
+      .pay-item{
+        margin: 5px 0;
+        color: #9094A6;
+        display: flex;
+        justify-content: space-between;
+      }
+      .name-pay{
+        width: 80%;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow:ellipsis;
+      }
+    }
+    .sum-text {
+      font-size: 14px;
+      font-weight: 500;
+      color: #30323b;
+      line-height: 21px;
+    }
+    .pay-XD {
+      font-size: 20px;
+      font-weight: 800;
+      color: #f03860;
+      line-height: 30px;
+    }
+    .sum-balance {
+      font-size: 14px;
+      font-weight: 400;
+      color: #9094a6;
+      line-height: 21px;
+      .nowRecharge{
+        color:rgba(52,104,254,0.8);
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+    .pay-tip {
+      width: 84px;
+      height: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #3468fe;
+      margin-left: 22px;
+      line-height: 0;
+    }
+  }
+}
+
+:deep(.el-overlay-dialog){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .el-dialog__header{
+    margin-right: 0;
+  }
+}
+
+.dialog-bt{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  .balance {
+    font-size: 14px;
+    font-weight: 400;
+    height: 32px;
+    background: #F5F6F9;
+    border-radius: 18px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  }
+  .price-num {
+    color: #FF9F03;
+    font-size: 24px;
+    //margin-right: 10px;
+    margin-right:2px;
+    margin-left: 5px;
+  }
+
+  .el-button {
+    border-radius: 8px;
+  }
+
+}
+
+:deep(.pay-dialog){
+  border-radius: 10px;
+}
+
+.pay-item-order{
+  display: flex;
+  align-items: center;
+  color: #181920;
+  .order{
+    font-size: 12px;
+    font-weight: 400;
+    color: #9094A6;
+  }
+}
+:deep(.el-dialog__body){
+  padding: 15px 25px 30px;
+}
+
+.footer-right{
+  display: flex;
+  align-items: center;
+}

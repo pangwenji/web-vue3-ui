@@ -1,0 +1,90 @@
+
+.file-top{
+  width: 100%;
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #292A30;
+  box-shadow: 3px 0px 6px 0px rgb(35 35 35);
+  border-bottom: 1px solid #353535;
+  .top-left{
+    display: flex;
+    align-items: center;
+    .top-icon{
+      display: flex;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      background-position: 50% 50%;
+    }
+    .icon-back{
+      background-image: url("@/assets/icons/back.png");
+      background-size: 60%;
+      cursor: pointer;
+    }
+    .icon-show{
+      background-image: url("@/assets/icons/show.png");
+      background-size: 60%;
+      cursor: pointer;
+    }
+    .icon-unshow{
+      background-image: url("@/assets/icons/unshow.png");
+      background-size: 60%;
+      cursor: pointer;
+    }
+    .file-name{
+      height: 30px;
+      margin-left: 15px;
+      font-size: 16px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .top-right{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    .el-dropdown-link{
+      font-size: 12px;
+    }
+    .btn-box{
+      margin-right: 14px;
+    }
+    .el-button{
+      background-color: #3D4352;
+      border: 1px solid #30323B;
+      color: #D0D4DE;
+      border-radius: 16px;
+      &:hover{
+        color: #ffffff;
+      }
+    }
+    .share-btn{
+      color: #D0D4DE;
+      button{
+        background: linear-gradient(42deg, #0459FF 0%, #5726DD 100%);
+      }
+    }
+    .info-box{
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .show-icon{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-size: 100%;
+    }
+    .icon-info{
+      display: inline-block;
+      background-image: url("@/assets/icons/clouddisk/icon_details.png@2x.png");
+    }
+  }
+}

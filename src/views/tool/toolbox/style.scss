@@ -1,0 +1,106 @@
+.main-big-box {
+  width: 95%;
+  height: 100%;
+  background-color: #0A0B0D;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  //.main-box::-webkit-scrollbar {
+  //  display: none;
+  //}
+
+  .main-box {
+    width: 95%;
+    flex: 1;
+    margin: auto;
+
+    .size {
+      height: 144px;
+
+
+    }
+  }
+
+  .margin-top20 {
+    margin-top: 24px;
+  }
+
+  .tool-header {
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    flex-shrink: 0;
+    //padding: 0 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #23242D;
+    color: #FFFFFF;
+    .el-input {
+      margin-top: 14px;
+    }
+
+    :deep(.el-input) {
+      input {
+        box-shadow: none; //去除白边
+        &:focus {
+          box-shadow: 0 0 0 1px var(--el-input-focus-border-color) inset; //输入内容原本样式
+          outline: 0;
+        }
+      }
+    }
+  }
+
+  .tool-top {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: rgba($color: #ffffff, $alpha: .3);
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px;
+    color: #FFFFFF;
+    .active {
+      // cursor: none;
+      color: white;
+
+      &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(42deg, #0459FF 0%, #5726DD 100%);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        display: inline-block;
+      }
+    }
+
+    // color: ;
+    .line {
+      width: 1px;
+      height: 16px;
+      flex-shrink: 0;
+      background: #eeeeee;
+      margin: 0 15px;
+      cursor: none;
+    }
+
+    span {
+      display: inline-block;
+      height: 100%;
+      line-height: 80px;
+      cursor: pointer;
+      position: relative;
+      margin-right: 40px;
+      flex: 0 0 auto;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+}

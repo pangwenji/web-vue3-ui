@@ -1,0 +1,48 @@
+:deep(.admin_enroll-view){
+  width: 100%;
+  min-height: 100%;
+  padding: 0 10px 56px;
+  user-select: none;
+  position: relative;
+  .header{
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    .tab-item{
+      display: inline-block;
+      margin-right: 50px;
+      font-size: 16px;
+      color: #8D91A3;
+      cursor: pointer;
+      &:hover{
+        color: #ffffff;
+      }
+    }
+    .activeTab{
+      color: #ffffff;
+      &::after{
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 2px;
+        height: 2px;
+        border-radius: 2px;
+        background: linear-gradient(42deg, #0459ff 0%, #5726dd 100%);
+      }
+    }
+  }
+
+  .container-box{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pagination-container-box{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+  }
+}

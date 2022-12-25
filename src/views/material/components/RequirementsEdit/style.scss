@@ -1,0 +1,38 @@
+.main-card {
+  width: 100%;
+
+  .box {
+    color: #18191E;
+    border: 1px solid #4E5262;
+    border-radius: 5px;
+    .textarea {
+      height: 100%;
+      :deep(.w-e-text-container) {
+        background-color: #18191E;
+        color: white;
+        padding: 5px;
+      }
+
+      :deep(.w-e-toolbar) {
+        background-color: #18191E;
+        color: white;
+      }
+      :deep(.w-e-bar-item .active){
+        background-color: #6077f7;
+      }
+      :deep(.w-e-scroll) {
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+
+      :deep(.w-e-select-list) {
+        min-width: 150px;
+        color: #18191E;
+      }
+    }
+  }
+}
+:deep(h1){
+  font-size: 25px !important;
+}

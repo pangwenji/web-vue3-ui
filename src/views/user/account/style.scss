@@ -1,0 +1,185 @@
+.box {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  color: #7B7B7D;
+  line-height: 14px;
+  height: calc(100vh - 165px);
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  .head-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 44px 28px 20px 44px;
+    background: linear-gradient(353deg, #1f3052 0%, #000000 100%, #000000 100%, #000000 100%) round;
+    min-height: 180px;
+
+    .right-box {
+      display: flex;
+      align-items: center;
+
+
+      .attention {
+        min-width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #979797;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 21px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+    }
+  }
+
+
+  .content-box {
+    flex: 1;
+    background-color: #0A0B0D;
+    padding: 20px 0px;
+    //height: 100%;
+    height: calc(100vh - 240px);
+    display: flex;
+    flex-direction: row;
+
+    .content-left {
+      height: 100%;
+      min-width: 300px;
+      width: 18%;
+      position: relative;
+      padding-left: 30px;
+
+      .card {
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        background: #1C1D24;
+        box-shadow: 0px 0px 4px 0px rgb(52 48 227 / 5%);
+        border-radius: 10px;
+        border: 1px solid #2B2D36;
+        align-items: center;
+        padding: 21px 26px;
+        color: #BEC0CD;
+        font-weight: 400;
+      }
+
+      .user-card {
+        min-height: 430px;
+
+        .userinfo {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+          .nickname-box {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 34px;
+          }
+
+          .id {
+
+          }
+
+          .tags-box {
+            display: flex;
+            //align-items: center;
+            margin-top: 15px;
+            //height: 30px;
+            justify-content: center;
+          }
+        }
+
+        .btn1 {
+          width: 100%;
+          height: 40px;
+          border-radius: 18px;
+          background-color: #6D87E6;
+          border: 1px solid #6D87E6;
+          font-weight: 500;
+          color: #FFFFFF;
+          line-height: 21px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 35px;
+        }
+
+        .btn2 {
+          margin-top: 10px;
+          border-radius: 15px;
+          width: 100%;
+          height: 40px;
+          color: #FFFFFF;
+          background-color: #c0cdf8;
+          border: 1px solid #c0cdf8;
+          font-weight: 500;
+          line-height: 21px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .carbtm {
+          width: 100%;
+          margin-top: 18px;
+        }
+
+      }
+
+      .fans-data {
+        margin-top: 25px;
+        padding: 21px 26px 0px 26px;
+        //min-height: 230px;
+        .radar-chart {
+          width: 100%;
+          height: 240px;
+          margin: auto;
+        }
+      }
+
+    }
+
+    .content-right{
+      width: 82%;
+      overflow: hidden;
+      .right-box{
+        padding: 10px 25px;
+        .intro-btn{
+          background: transparent;
+          margin-top: 10px;
+        }
+
+        :deep(.el-textarea__inner){
+          background: initial;
+        }
+      }
+    }
+
+  }
+
+}
+
+.box::-webkit-scrollbar{
+  display: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.flexB {
+  display: flex;
+  justify-content: space-between;
+}

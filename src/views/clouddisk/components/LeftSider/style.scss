@@ -1,0 +1,182 @@
+.left-sider-container {
+  width: 199px;
+  height: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+	color: #ffffff;
+  //border-right: 1px solid #979797;
+  border-right: 1px solid #353535;
+	user-select:none;
+	.line-bottom{
+		width: 166px;
+		margin: 20px 8px 0;
+		height: 1px;
+		background-color: #3F4148;
+	}
+	.menu-title{
+		width: 168px;
+		height: 40px;
+		margin: 20px 0 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+		cursor: pointer;
+	}
+  .menu-title2{
+		cursor: auto;
+    span,i{
+      cursor: pointer;
+    }
+  }
+  .menu-item{
+		width: 184px;
+		height: 40px;
+		padding-left: 8px;
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		.menu-icon{
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+			background-size: 100%;
+		}
+		.icon-file{
+			background-image: url("@/assets/icons/clouddisk/icon_file@2x.png");
+		}
+		.icon-recycle{
+			background-image: url("@/assets/icons/clouddisk/icon_huishouzhan@2x.png");
+		}
+		.icon-share{
+			background-image: url("@/assets/icons/clouddisk/icon_share@2x.png");
+		}
+		.icon-video{
+			background-image: url("@/assets/icons/clouddisk/icon_vedio@2x.png");
+		}
+		.icon-audio{
+			background-image: url("@/assets/icons/clouddisk/icon_audio@2x.png");
+		}
+		.icon-picture{
+			background-image: url("@/assets/icons/clouddisk/icon_pic@2x.png");
+		}
+		.icon-file{
+			background-image: url("@/assets/icons/clouddisk/icon_file@2x.png");
+		}
+		.icon-others{
+			background-image: url("@/assets/icons/clouddisk/icon_others@2x.png");
+		}
+		.icon-folder{
+			background-image: url("@/assets/icons/clouddisk/icon_folder@2x.png");
+		}
+		.icon-branch{
+			background-image: url("@/assets/icons/clouddisk/icon_branch@2x.png");
+		}
+	}
+	.menu-item:hover{
+		background: #30323B;
+		border-radius: 8px;
+	}
+	.menu1-r{
+		width: 132px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.l-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+	}
+  .icon-arrow{
+		padding: 12px;
+    background-image: url("@/assets/icons/clouddisk/icon_xiala.png@2x.png");
+  }
+  .icon-add{
+		margin-right: 14px;
+    background-image: url("@/assets/icons/clouddisk/icon_tianjia.png@2x.png");
+  }
+	.icon-add-h:hover{
+		border-radius: 4px;
+		background-color: #232328;
+	}
+	.menu-item2{
+		margin-top: 4px;
+		padding-left: 26px;
+		color: #9094A6;
+	}
+	.active-menu{
+		background: #30323B;
+		border-radius: 8px;
+		color: #ffffff;
+	}
+
+	.add-box{
+		height: 40px;
+		margin-bottom: 4px;
+		padding: 0 8px 0 10px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		.icon-folder{
+			width: 24px;
+			height: 24px;
+			background-image: url("@/assets/icons/clouddisk/icon_folder@2x.png");
+		}
+	}
+}
+.filter-tree{
+	color: #ffffff;
+	background-color: #292A30;
+}
+:deep(.el-tree-node__content){
+	padding: 14px 24px 14px 0;
+}
+:deep(.el-tree-node__label){
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+:deep(.el-tree){
+	--el-tree-node-hover-bg-color: #30323B;
+}
+:deep(.el-tree-node:focus>.el-tree-node__content){
+	background-color: #30323B;
+}
+// 设置节点行的高度
+// :deep(.el-tree-node__content) {
+//     height: 38px;
+// }
+// // 设置下拉图标位置
+// :deep(.el-tree-node__expand-icon) {
+//     position: absolute;
+//     right: 1%;
+// }
+// // 不使用slot自定义列表时label样式控制
+// :deep(.el-tree-node__label) {
+//     padding-left: 15px;
+// }
+// :deep(.el-tree-node__expand-icon){
+// 	display: inline-block;
+// 	width: 16px;
+// 	height: 16px;
+// 	background-repeat: no-repeat;
+// 	background-position: 50% 50%;
+// 	background-size: 100%;
+// 	background-image: url("@/assets/icons/clouddisk/icon_folder@2x.png");
+// }
+
+:deep(.el-scrollbar__bar){
+	width: 0;
+	height: 0;
+}
+.el-scrollbar{
+	box-shadow: 3px 0px 6px 0px rgb(35 35 35 / 38%);
+	padding: 12px 7px 0 8px;
+}

@@ -1,0 +1,1 @@
+import{q as a,s as c,o as n,i as u}from"./vendor.d1385716.js";const d={setup(p){const e=a(),t=c(),{params:o,query:s}=e,{path:r}=o;return t.replace({path:"/"+r,query:s}),(l,_)=>(n(),u("div",null,"\u91CD\u5B9A\u5411"))}};export{d as default};

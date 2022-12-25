@@ -1,0 +1,80 @@
+.share-info-dialog{
+	.share-info-content{
+		height: 100%;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		.share-name{
+			margin-top: 20px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.share-qrcode{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.share-url{
+			width: 100%;
+			padding: 0 15px;
+			.copy-btn{
+				flex-shrink: 0;
+				width: 100%;
+				background: linear-gradient(42deg, #0459FF 0%, #5726DD 100%);
+				border-radius: 10px;
+				margin-top: 15px;
+				border: none;
+			}
+		}
+		.bott-title{
+			user-select:none;
+			width: 100%;
+			height: 59px;
+			border-top: 1px solid #E4E4E4;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #4565DC;
+			cursor: pointer;
+		}
+	}
+	:deep(.el-dialog){
+		border-radius: 16px;
+		.el-dialog__header{
+			margin-right: 0!important;
+		}
+		.my-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.title-btn{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 4px;
+			}
+			.title-btn:hover{
+				border-radius: 5px;
+				background-color: #eaeaee;
+			}
+		}
+	}
+	:deep(.el-overlay-dialog){
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	:deep(.el-dialog__header){
+		padding: 20px;
+	}
+	:deep(.el-dialog__body) {
+		padding:  0;
+	}
+	:deep(.el-loading-mask){
+		border-radius: 0 0 16px 16px;
+	}
+}

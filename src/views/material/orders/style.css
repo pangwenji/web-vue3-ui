@@ -1,0 +1,247 @@
+.line-bottom {
+  width: 100%;
+  margin: 0;
+  height: 1px;
+  background-color: #3f4148;
+}
+
+.order-box {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 12px;
+  color: #9094A6;
+}
+
+.order-box .order-main {
+  background: #111216;
+  padding: 15px 20px 9px 26px;
+  width: 100%;
+}
+
+.order-box .order-main:hover {
+  background: #1C1D24;
+}
+
+.order-box .order-main .left {
+  font-size: 40px;
+  text-align: left;
+}
+
+.order-box .order-main .left .line {
+  width: 100%;
+  height: 1px;
+  background: #262626;
+  margin: 12px 0px;
+}
+
+.order-box .order-main .left .img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("@/assets/images/cd.png");
+}
+
+.order-box .order-main .left .img2 {
+  width: 70px;
+  height: 70px;
+  background-size: 70px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.order-box .order-main .left .picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  background-image: url("@/assets/images/login-background.jpg");
+}
+
+.order-box .order-main .left .project {
+  background-image: url("@/assets/material/imge_gongchengwenjian@2x.png");
+}
+
+.order-box .order-main .left .resource {
+  background-image: url("@/assets/material/imge_ziyuanbao@2x.png");
+}
+
+.order-box .order-main .left .order-title {
+  margin-left: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  font-size: 14px;
+  font-weight: 500;
+  color: #9094A6;
+}
+
+.order-box .order-main .left .order-title .title {
+  width: 40%;
+  height: 100%;
+}
+
+.order-box .order-main .left .order-title .itemTitle {
+  overflow: hidden;
+  display: flex;
+}
+
+.order-box .order-main .left .order-title .itemTitle .title-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  border-collapse: collapse;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  max-width: 500px;
+}
+
+.order-box .order-main .left .order-title .itemTitle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.order-box .order-main .left .order-title .num {
+  padding-top: 12px;
+  font-weight: 400;
+  color: #4e5262;
+}
+
+.order-box .order-main .left .col-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0px;
+  align-items: center;
+  color: rgba(52, 104, 254, 0.8);
+  font-size: 14px;
+  flex: 0 0 auto;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.order-box .order-main .left .col-text:hover {
+  text-decoration: underline;
+}
+
+.order-box .order-bottom {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9094A6;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 60px 14px 16px;
+  font-weight: 400;
+  text-align: left;
+  white-space: nowrap;
+  height: 58px;
+  border-radius: 0px 0px 8px 8px;
+  background: #17181E;
+  padding: 22px 20px;
+}
+
+.order-box .order-bottom .left {
+  display: flex;
+  align-items: center;
+}
+
+.order-box .order-bottom .right {
+  width: 30%;
+}
+
+.order-box .order-bottom .right .operation-text {
+  margin-right: 24px;
+  color: rgba(52, 104, 254, 0.8);
+  flex: 0 0 auto;
+  cursor: pointer;
+  text-align: end;
+}
+
+.order-box .order-bottom .right .operation-text:hover {
+  text-decoration: underline;
+}
+
+.el-collapse-item {
+  min-height: 100px;
+  margin-top: 20px;
+}
+
+:deep(.el-collapse-item__header) {
+  height: 100px;
+  color: #ffffff;
+  background-color: rgba(28, 29, 36, 0.3);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+}
+
+:deep(.el-collapse-item__header):hover {
+  background: rgba(28, 29, 36, 0.83);
+}
+
+:deep(.el-collapse-item__wrap) {
+  background-color: rgba(28, 29, 36, 0.6);
+}
+
+:deep(.el-collapse) {
+  --el-collapse-border-color: none;
+}
+
+.content-card {
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 12px;
+  border: 0.1px solid rgba(173, 177, 194, 0.22);
+}
+
+.content-card:hover {
+  border-radius: 8px;
+}
+
+.toPay {
+  margin: auto;
+  width: 110px;
+  height: 40px;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, #0459ff 0%, #5726dd 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flexC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ztag {
+  flex: 0 0 auto;
+  margin-left: 9px;
+}
+
+.ztag img {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}

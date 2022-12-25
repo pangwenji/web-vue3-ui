@@ -1,0 +1,129 @@
+.main-card{
+  background-color: #0a0b0d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tool-box {
+  margin-top: 20px;
+  flex: 1;
+  .tool-title {
+    padding: 20px;
+  }
+
+  .loading {
+    display: inline-block;
+    height: 31px;
+    line-height: 1;
+    text-align: left;
+    font-size: 22px;
+    vertical-align: -.25em;
+    overflow: hidden;
+  }
+
+  .loading::before {
+    display: block;
+    content: '...\A..\A.';
+    white-space: pre-wrap;
+    animation: loading 2s infinite step-start both;
+  }
+
+  @keyframes loading {
+    33.3% {
+      transform: translateY(-2em);
+    }
+    66.6% {
+      transform: translateY(-1em);
+    }
+  }
+}
+
+
+.order-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: rgba(248, 130, 18, 0.15);
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #F88212;
+  line-height: 25px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.tool-dialog {
+  position: relative;
+
+  .over-data {
+    position: absolute;
+    bottom: 25px
+  }
+
+  .over-num {
+    display: flex;
+    align-items: center;
+
+    .num {
+      font-size: 28px;
+      font-weight: 500;
+      color: #FF9F03;
+      line-height: 40px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.progress {
+  margin: 30px;
+  background-color: rgba(20, 21, 26, 0.57);
+  height: 419px;
+  border-radius: 8px;
+  color: #8D91A3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.try-try {
+  margin: 30px;
+  background-color: #14151A;
+  padding: 42px 120px;
+  min-height: 400px;
+  .try-bt{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .trt-muisz-bt{
+    width: 112px;
+    height: 32px;
+    background: rgba(52, 104, 254, 0.11);
+    border-radius: 19px;
+    color: #3468FE;
+    border: none;
+  }
+  .try-bt-active{
+    background-color: rgba(52,104,254,0.1);
+    color: #3468FE;
+  }
+  .try-bt-no{
+    background-color: #101115;
+    color: #3D3F50;
+  }
+  .try-text{
+    font-size: 14px;
+    color: #E1E1E1;
+    line-height: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.end-text{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #0DA411;
+}

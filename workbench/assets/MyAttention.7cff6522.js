@@ -1,0 +1,1 @@
+import{_ as t}from"./index.341eca8d.js";import{o as n,i as o,C as s,m as e}from"./vendor.2b5961b2.js";const r={},a=e("div",{class:"header-title"},"\u6211\u7684\u5173\u6CE8\u7684\u9879\u76EE",-1),c=e("div",null,null,-1);function _(d,i){return n(),o(s,null,[a,c],64)}var f=t(r,[["render",_]]);export{f as default};

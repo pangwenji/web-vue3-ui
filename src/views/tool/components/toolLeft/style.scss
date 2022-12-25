@@ -1,0 +1,145 @@
+.tool-left {
+  width: 200px;
+  height: 100%;
+  flex-shrink: 0;
+  padding: 20px 7px 0 8px;
+  box-sizing: border-box;
+  color: #9094a6;
+  box-shadow: 3px 0px 6px 0px rgb(35 35 35 / 38%);
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #292a30;
+  .menu-item {
+    width: 184px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #2F303D;
+      border-radius: 6px;
+    }
+
+    .plus-tool {
+      color: white;
+      width: 100%;
+      height: 45px;
+      border-radius: 10px;
+      border: 1px solid #1C1D24;
+    }
+
+    .menu-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100%;
+    }
+
+    .icon-file {
+      background-image: url("@/assets/icons/clouddisk/icon_file@2x.png");
+    }
+
+    .icon-recycle {
+      background-image: url("@/assets/icons/clouddisk/icon_huishouzhan@2x.png");
+    }
+  }
+
+  .active-menu {
+    background: #3C3E49;
+    border-radius: 8px;
+    color: white;
+    &:hover{
+      background-color: #3C3E49;
+    }
+  }
+
+  .line-bottom {
+    width: 166px;
+    margin: 20px 8px 0;
+    height: 1px;
+    background-color: #3F4148;
+  }
+
+}
+.common-tools {
+  width: 99%;
+  margin: auto;
+  //height: 90%;
+  //background: #30323B;
+  background: rgba(28,29,36,0.25);
+  margin-top: 42px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    padding: 15px;
+    font-size: 15px;
+    color: #9094A6;
+    text-align: center;
+  }
+
+  .menu-item-common {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    background-color:  #292A30;
+    margin: 8px auto;
+    border-radius: 8px;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .common-name{
+      font-size: 14px;
+      color: #9094A6;
+      margin-left: 12px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+    .menu-icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 100%;
+    }
+    .right {
+      transform: rotate(90deg) ;
+      width: 16px;
+      height: 16px;
+      display: none;
+      margin-top: 17px;
+      position: absolute;
+      right: 0;
+    }
+
+    &:hover {
+      .right {
+        display: block;
+      }
+    }
+  }
+
+  .mord{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border: #3F4148 dashed 2px;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+}

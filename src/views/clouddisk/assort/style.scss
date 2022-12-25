@@ -1,0 +1,71 @@
+.right-box {
+  flex-grow: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  .container-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .file-list-box {
+    width: 100%;
+    height: 100%;
+    // padding: 2px 1px;
+    color: #ffffff;
+    background-color: #0a0b0d;
+    .list-header {
+      width: 100%;
+      margin-top: 24px;
+      padding-left: 16px;
+      color: #bec0cd;
+      height: 24px;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      .fname {
+        width: 48%;
+      }
+      .ftype {
+        width: 10%;
+      }
+      .fsize {
+        width: 10%;
+      }
+      .faddby {
+        width: 10%;
+      }
+      .faddtime {
+        width: 18%;
+      }
+      .fhandle {
+        width: 4%;
+      }
+    }
+  }
+}
+
+:deep(.file-list-scrollbar){
+  width: 100%;
+  padding: 16px;
+}
+:deep(.is-horizontal){
+  width: 0;
+  height: 0;
+}
+
+.fileinfo-enter-active, .fileinfo-leave-active{
+  transition: opacity .2s ease,transform .2s ease;
+}
+.fileinfo-enter-from, .fileinfo-leave-to{
+  transition: .4s;
+  width: 0;
+  opacity: 0;
+}
+.fileinfo-enter-to, .fileinfo-leave-from{
+  transition: .4s;
+  width: 219px;
+  opacity: 1;
+}

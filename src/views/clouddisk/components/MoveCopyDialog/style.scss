@@ -1,0 +1,109 @@
+.move-copy-dialog{
+  user-select: none;
+  .my-header{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .copy-tabs{
+    margin-bottom: 10px;
+    display: flex;
+    div{
+      padding: 4px 0;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .active-tab::after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(42deg, #0459ff 0%, #5726dd 100%);
+    }
+  }
+  .content-box{
+    // margin-top: 10px;
+    padding: 4px 14px;
+    border-radius: 8px;
+    color: #000000;
+    background-color: #f5f5f7;
+    .filter-tree{
+      background-color: #f5f5f7;
+      &:deep(.el-tree-node){
+        .el-tree-node__content{
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 4px;
+          position: relative;
+          &:hover{
+            background: #ededed;
+          }
+        }
+
+      }
+      .custom-node-disabled{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      .custom-tree-node{
+        width: 100%;
+        padding: 12px 12px 12px 0;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        user-select: none;
+      }
+    }
+    .el-tree-node__label{
+      width: 100%;
+      padding: 12px 12px 12px 0;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .node-left{
+        display: flex;
+        align-items: center;
+        .icon-folder{
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: 100%;
+          background-image: url("@/assets/icons/clouddisk/icon_folder@2x.png");
+        }
+      }
+    }
+  }
+
+  .cm-btn {
+    height: 40px;
+    border-radius: 10px;
+  }
+  .cm-btn-confirm {
+    background: linear-gradient(42deg,rgb(4,89,255) 0%,rgb(87,38,221) 100%);
+    border: none;
+  }
+}
+:deep(.el-dialog){
+  border-radius: 16px;
+}
+:deep(.el-overlay-dialog) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:deep(.el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content){
+  background-color: #D8E4FF !important;
+  color: #3468FE;
+  .el-tree-node__expand-icon{
+    color: #3468FE;
+    &.is-leaf{
+      visibility: hidden;
+    }
+  }
+}

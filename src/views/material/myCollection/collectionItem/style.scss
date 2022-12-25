@@ -1,0 +1,457 @@
+.content-card {
+  position: relative;
+  padding: 15px 15px 15px 16px;
+  margin-bottom: 12px;
+  //background: rgba(28, 29, 36, 0.3);
+  border-radius: 8px;
+
+  &:hover {
+    background: rgba(28, 29, 36, 0.8);
+    border-radius: 8px;
+    //border: 1px solid #4E5262;
+  }
+
+  //sound
+  .card-box {
+    margin: auto;
+    display: flex;
+    padding: 0;
+
+    .card-left {
+      display: flex;
+      flex: 3;
+      width: 330px;
+      align-items: center;
+
+      .img {
+        flex: 1;
+        min-width: 70px;
+        margin-right: 8px;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("@/assets/images/cd.png");
+      }
+
+
+      .data {
+        flex: 6;
+        width: 80%;
+        //margin-left: 12px;
+        font-size: 14px;
+
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+
+        .name {
+          display: flex;
+        }
+
+        .tags {
+          display: flex;
+          flex-wrap: wrap;
+
+          .tag {
+            //width: 62px;
+            height: 22px;
+            margin-right: 8px;
+            padding: 5px 7px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: 1px solid #4E5262;
+            font-size: 12px;
+            font-weight: 400;
+            color: #C4C9D3;
+            line-height: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+          }
+
+          .icon-box {
+            margin-right: 8px;
+            margin-top: 10px;
+            width: 22px;
+            height: 22px;
+            background: #3D3E49;
+            border-radius: 4px;
+            border: 1px solid #4E5262;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+
+    }
+
+    .card-mid {
+      display: flex;
+      flex: 6;
+      margin: auto;
+      justify-content: flex-end;
+      align-items: center;
+      .wave-box {
+        width: 85%;
+        display: flex;
+        align-items: center;
+
+        .curTime {
+          min-width: 100px;
+          margin-left: 3px;
+          color: #FFFFFF;
+        }
+
+        .audio-info {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          font-weight: 500;
+          color: #FFFFFF;
+          line-height: 14px;
+        }
+      }
+
+      .price {
+        margin: auto;
+        height: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        color: #FF9F03;
+        line-height: 14px;
+        align-items: flex-start;
+        .pNum {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .section32 {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            background-size: 15px 15px;
+            background-image: url("@/assets/user/wallet/tongqian.png");
+          }
+        }
+
+        .cost {
+          // text-decoration: line-through;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 400;
+          color: #BEC0CD;
+          line-height: 12px;
+          margin-top: 5px;
+        }
+      }
+
+      .shopping {
+        flex: 1;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+
+      }
+
+    }
+
+    .card-right {
+      flex: 2;
+      margin: auto;
+
+      .buy {
+        font-size: 12px;
+        margin: auto;
+        width: 72px;
+        height: 25px;
+        background: #3468FE;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        line-height: 21px;
+        margin-left: 30px;
+      }
+      .icon{
+        margin-top: auto;
+        margin-right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .flex {
+    display: flex;
+  }
+}
+
+//picture、video
+.file-item-card {
+  width: 100%;
+  height: 100%;
+
+  &.files-folder {
+    .file-item-content {
+      border-radius: 0 8px 8px;
+    }
+  }
+
+  position: relative;
+  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    margin-top: 80%;
+  }
+
+  .file-item-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    //margin-top: 20px;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #ffffff;
+    background-color:#111216;
+
+    &:hover {
+      .collect-cart-down {
+        top: 10px;
+      }
+    }
+
+
+    .file-item-cover {
+      width: 100%;
+      height: 59%;
+      position: relative;
+      background: #1C1D24;
+      pointer-events: none;
+      user-select: none;
+      padding: 10px;
+
+      &.file-item-image {
+        overflow: hidden;
+        pointer-events: none;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+
+    .collect-cart-down {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      display: flex;
+      margin-right: 8px;
+      z-index: 3;
+      transition: top .3s ease;
+      .icon {
+        width: 30px;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.6000);
+        border-radius: 15px;
+        backdrop-filter: blur(3px);
+        cursor: pointer;
+
+        img {
+          width: 30px;
+          height:30px;
+        }
+      }
+
+      .icon:hover {
+        background: rgba(0, 0, 0, .8);
+      }
+    }
+
+    .file-item-info {
+      height: 41%;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 14px;
+
+      .detail {
+        flex-grow: 1;
+        overflow: hidden;
+
+        .top {
+          display: flex;
+          align-items: center;
+
+          .title {
+            margin-right: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+          }
+        }
+
+        .detail-bottom {
+          margin-top: 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .vcost {
+            margin-top: 6px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+            .title {
+              margin-right: 10px;
+              color: #ffffff;
+            }
+          }
+
+          .right .buy {
+            width: 72px;
+            height: 25px;
+            background: #3468FE;
+            border-radius: 15px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//font
+.font-box {
+  width: 100%;
+  color: #ffffff;
+  padding: 5px 16px;
+  margin-bottom: 20px;
+  background-color: rgba(28, 29, 36, 0.3);
+  border-radius: 8px;
+
+  .font-top {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(151, 151, 151, .1);
+  }
+
+  .font-bottom {
+    height: 66px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .bright {
+      display: flex;
+    }
+  }
+}
+
+.font-box:hover {
+  background-color: rgba(28, 29, 36);
+}
+
+.ztag{
+  flex: 0 0 auto;
+  img{
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+  }
+}
+
+.price {
+  margin: auto;
+  height: 100%;
+  //font-size: 18px;
+  font-weight: 400;
+  color: #eeb76e;
+  line-height: 14px;
+  .p-title {
+    margin-right: 10px;
+    color: #ffffff;
+    font-size: 12px;
+  }
+  .section32 {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background-image: url("@/assets/user/wallet/tongqian.png");
+    background-size: 12px 12px;
+  }
+}
+
+.buy {
+  margin: auto;
+  width: 72px;
+  height: 25px;
+  background: #3468FE;
+  border-radius: 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title {
+  padding: 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline
+  }
+}
+
+.main48 {
+  width: 38px;
+  height: 22px;
+  background-image: url('../../../../assets/images/more.png');
+  background-size: 100% 100%;
+  margin: 10px 0 0 0px;
+}
+
+.flexE {
+  display: flex;
+  justify-content: flex-end;
+}

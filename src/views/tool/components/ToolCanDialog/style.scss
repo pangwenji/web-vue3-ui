@@ -1,0 +1,59 @@
+:deep(.el-dialog){
+  border-radius: 16px;
+  top:50%;
+  transform:translateY(-60%);
+}
+:deep(.el-dialog__header){
+  display: none;
+}
+:deep(.el-dialog__body) {
+  padding: 20px;
+  .dialog-bt{
+    margin-top: 40px;
+    text-align: center;
+    .el-button{
+      width: 106px;
+      height: 40px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .confirm{
+      width: 90px;
+      height: 56px;
+      background-color: #E0E0E0;;
+      border-radius: 28px;
+      color: #181920;
+      font-size: 14px;
+      display: inline-block;
+      border: none;
+    }
+    .zuinfo{
+      font-size: 12px;
+      font-weight: 400;
+      color: #9094A6;
+      line-height: 17px;
+      margin-top: 10px;
+    }
+    .success{
+      background: linear-gradient(155deg, #64A1FF 0%, #3468FE 100%);
+      border-radius: 28px;
+      color: #FFFFFF;
+      font-size: 14px;
+      display: inline-block;
+      -moz-box-shadow:1px 1px 5px  #3468FE;
+      -webkit-box-shadow:1px 1px 5px  #3468FE;
+      box-shadow:1px 1px 5px  #3468FE;
+      border: none;
+    }
+  }
+  .dialog-title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333539;
+    line-height: 24px;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+}

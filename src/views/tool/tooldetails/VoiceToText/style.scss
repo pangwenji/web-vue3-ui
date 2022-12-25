@@ -1,0 +1,208 @@
+.voice2text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0b0d;
+  user-select: none;
+
+  .content {
+    width: 95%;
+    height: 80%;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #1C1D24;
+    border-radius: 16px;
+
+    .resources {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba($color: #fff, $alpha: .05);
+      .left {
+        width: 400px;
+        min-width: 380px;
+        height: 168px;
+        font-size: 12px;
+        color: #676C7F;
+        background-color: #14151B;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .upload-box {
+          width: 100%;
+          height: 100%;
+          :deep(.el-upload--text) {
+            width: 100%;
+            height: 100%;
+            .el-upload-dragger {
+              width: 100%;
+              height: 100%;
+              font-size: 14px;
+              color: #3D3F50;
+              background-color: #14151B;
+              border: none;
+              border-radius: 16px;
+              &:hover{
+                background-color: rgba(52,104,254,0.04);
+              }
+              &.is-dragover{
+                background-color: rgba(52,104,254,0.04);
+              }
+            }
+          }
+        }
+
+
+        .instruction {
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        .upload {
+          cursor: pointer;
+          color: #3468FE;
+        }
+
+        .file-box {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .file-info {
+            height: 100%;
+            margin-left: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            .name {
+              max-width: 420px;
+              font-size: 14px;
+              color: #E1E1E1;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+            .info {
+              margin-top: 2px;
+              font-size: 12px;
+              color: #676C7F;
+            }
+          }
+        }
+      }
+
+      .right {
+        margin-left: 60px;
+        min-width: 496px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        :deep(.select-lg) {
+          width: 96px;
+          height: 28px;
+          .el-input {
+            --el-input-border: none;
+            --el-input-bg-color: #14151A;
+          }
+          .el-input__inner {
+            color: #3468FE;
+            box-shadow: none;
+            --el-select-input-focus-border-color: none;
+          }
+        }
+
+        :deep(.resources-radio) {
+          .el-radio {
+            min-width: 50px;
+          }
+          .is-checked {
+            .el-radio__inner {
+              border-color: #3468FE;
+              background: #3468FE;
+            }
+            .el-radio__inner::after {
+              transform: translate(-50%,-50%) scale(0);
+            }
+            .el-radio__label {
+              color: #3468FE;
+            }
+          }
+        }
+
+        .resources-btn {
+          margin-bottom: 10px;
+          .el-button {
+            min-width: 114px;
+          }
+        }
+      }
+    }
+
+    .result-box {
+      position: relative;
+      width: 100%;
+      .result-copy {
+        position: absolute;
+        top: -30px;
+        right: 10px;
+        font-size: 14px;
+        color: #4E5262;
+      }
+      .active-copy {
+        color: #3468FE;
+        cursor: pointer;
+      }
+
+      .result {
+        width: 100%;
+        height: 228px;
+        padding: 20px;
+        margin-top: 60px;
+        background-color: #14151A;
+        border-radius: 8px;
+
+        .empty {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .e-text {
+            margin: 5px 0;
+            color: #4E5262;
+            font-size: 14px;
+          }
+        }
+
+        .processing {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .e-text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #8D91A3;
+          }
+          .e-text2 {
+            font-size: 14px;
+            color: #4E5262;
+          }
+        }
+
+        .result-text {
+          user-select: text;
+          .el-scrollbar{
+            color: #E1E1E1;
+          }
+        }
+      }
+    }
+  }
+}

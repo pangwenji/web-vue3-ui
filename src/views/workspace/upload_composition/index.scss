@@ -1,0 +1,286 @@
+.composition_container{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+:deep(.el-dropdown-menu__item){
+    &.active{
+        color: #3468FE;
+        background: rgba($color: #3468FE, $alpha: .1);
+    }
+    &:hover{
+        color: #3468FE !important;
+        background: rgba($color: #3468FE, $alpha: .1) !important;
+    }
+}
+
+
+.composition_main{
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    flex: auto;
+    overflow: hidden;
+    flex-direction: column;
+    &-header{
+        width: 100%;
+        height: 60px;
+        flex: none;
+        background-color: #15161C;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        overflow: hidden;
+        .title{
+            color: #676C7F;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        .left-container{
+            line-height: 60px;
+            float: right;
+            display: flex;
+            align-items: center;
+        }
+        .right-container{
+            line-height: 60px;
+            float: right;
+            display: flex;
+            color: #9094A6;
+            font-size: 14px;
+            align-items: center;
+        }
+    }
+    &-scrollbar{
+        flex: auto;
+        overflow: hidden;
+        .file-container{
+            .file-item{
+                position: relative;
+                padding: 10px 60px 10px 40px;
+                background: #1C1D24;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &:deep(.el-avatar){
+                    pointer-events: none;
+                    background-color: transparent;
+                    
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                &:hover{
+                    background: #24262F;
+                }
+                &.active{
+                    background: #24262F;
+                }
+                .cover-box{
+                    width: 80px;
+                    height: 80px;
+                    flex: none;
+                    background: #17181E;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    margin-right: 20px;
+                }
+                .info-box{
+                    width: 100px;
+                    flex: auto;
+                    overflow: hidden;
+                    padding: 10px 0;
+                    line-height: 30px;
+                    margin-right: 20px;
+                    div{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .title{
+                        color: #fff;
+                        font-size: 16px;
+                    }
+                    .desc{
+                        color: #666A7A;
+                        font-size: 12px;
+                    }
+                }
+                .tag-box{
+                    width: 360px;
+                    flex: auto;
+                    align-self: stretch;
+                    padding: 10px 0 0;
+                    .tag-item{
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        color: #676C7F;
+                        text-align: center;
+                        padding: 4px 10px;
+                        display: inline-block;
+                        border: 1px solid  #3D3F50;
+                        border-radius: 6px;
+                        font-size: 14px;
+                        background: #24262F;
+                    }
+                }
+            }
+        }
+        &:deep(.composition_main-view){
+            width: 100%;
+            min-height: 100%;
+            padding: 20px 20px 56px;
+            position: relative;
+            .pagination-container-box{
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                left: 0;
+            }
+            .file-container{
+                .el-checkbox{
+                    cursor: pointer;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    // --el-checkbox-border-radius: 4px;
+                    --el-checkbox-bg-color: #17181E;
+                    --el-checkbox-input-border: 1px solid #17181E;
+                    --el-checkbox-checked-bg-color: #3468FE;
+                    --el-checkbox-checked-input-border-color: #3468FE;
+                    --el-checkbox-input-border-color-hover: #3468FE;
+                    font-size: 14px;
+                }
+                .el-icon{
+                    position: absolute;
+                    top: 50%;
+                    right: 40px;
+                    color: #979797;
+                    font-size: 22px;
+                    padding: 2px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+.composition_empty{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    color: #3D3F50;
+    font-size: 12px;
+    transform: translateY(-50%);
+    .upload-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        .upload-type-item{
+            margin: 0 10px;
+            width: 170px;
+            height: 170px;
+            border-radius: 20px;
+            background-color: #16161c;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
+            border: 1px dashed #16161c;
+            cursor: pointer;
+            .icon{
+                width: 65px;
+                height: 65px;
+                flex: none;
+                margin-bottom: 20px;
+                background-size: 100% 60px;
+                background-repeat: no-repeat;
+                background-position: center;
+                &.audio1{
+                    background-image: url(@/assets/icons/composition/audio1_1.png);
+                }
+                &.image1{
+                    background-image: url(@/assets/icons/composition/image1_1.png);
+                }
+                &.video1{
+                    background-image: url(@/assets/icons/composition/video1_1.png);
+                }
+                &.other1{
+                    background-image: url(@/assets/icons/composition/other1_1.png);
+                }
+                &.audio2{
+                    background-image: url(@/assets/icons/composition/audio2_1.png);
+                }
+                &.image2{
+                    background-image: url(@/assets/icons/composition/image2_1.png);
+                }
+                &.video2{
+                    background-image: url(@/assets/icons/composition/video2_1.png);
+                }
+                &.other2{
+                    background-image: url(@/assets/icons/composition/other2_1.png);
+                }
+                &.video3{
+                    background-image: url(@/assets/icons/composition/video3_1.png);
+                }
+                &.audio3{
+                    background-image: url(@/assets/icons/composition/audio3_1.png);
+                }
+            }
+            &.disabled{
+                cursor: no-drop;
+                opacity: .6;
+                &:hover{
+                    background-color: #16161c;
+                    border: 1px dashed #16161c;
+                    color: #3D3F50;
+                }
+            }
+            &:hover{
+                background-color: rgba($color: #3468FE, $alpha: .1);
+                border-color: rgba($color: #3468FE, $alpha: .4);
+                color: #3468FE;
+                .icon{
+                    &.audio1{
+                        background-image: url(@/assets/icons/composition/audio1_2.png);
+                    }
+                    &.image1{
+                        background-image: url(@/assets/icons/composition/image1_2.png);
+                    }
+                    &.video1{
+                        background-image: url(@/assets/icons/composition/video1_2.png);
+                    }
+                    &.other1{
+                        background-image: url(@/assets/icons/composition/other1_2.png);
+                    }
+                    &.audio2{
+                        background-image: url(@/assets/icons/composition/audio2_2.png);
+                    }
+                    &.image2{
+                        background-image: url(@/assets/icons/composition/image2_2.png);
+                    }
+                    &.video2{
+                        background-image: url(@/assets/icons/composition/video2_2.png);
+                    }
+                    &.other2{
+                        background-image: url(@/assets/icons/composition/other2_2.png);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+:deep(.el-dialog){
+  border-radius: 8px;
+  top:50%;
+  transform:translateY(-60%);
+}
+:deep(.el-dialog__header){
+  display: none;
+}
+:deep(.el-dialog__body) {
+  padding: 20px;
+  .dialog-bt{
+    margin-top: 30px;
+    text-align: right;
+    .el-button{
+     padding: 11px 32px;
+      height: 40px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .confirm{
+      background: #3468FE;
+      border-radius: 8px;
+      color: #FFFFFF;
+    }
+
+  }
+  .dialog-title{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333539;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

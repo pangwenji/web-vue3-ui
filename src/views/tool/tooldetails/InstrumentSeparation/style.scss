@@ -1,0 +1,59 @@
+.main-card{
+  background-color: #0a0b0d;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .try-try {
+    margin: 30px;
+    background-color: #14151A;
+    padding: 42px 120px;
+  }
+  .progress {
+    margin: 30px;
+    background-color: rgba(20, 21, 26, 0.57);
+    min-height: 499px;
+    border-radius: 8px;
+    color: #8D91A3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+.can-text{
+  font-size: 14px;
+  font-weight: 500;
+  color: #0DA411;
+  line-height: 20px;
+}
+
+.try-text{
+  color: #E1E1E1;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.try-bt{
+  margin-top: 60px;
+  justify-content: center;
+  display: flex;
+  .trt-muisz-bt{
+    width: 112px;
+    height: 32px;
+    background: rgba(52, 104, 254, 0.1);
+    border-radius: 19px;
+    border: none;
+    color: #3468FE;
+  }
+  .try-bt-active{
+    background-color: rgba(52,104,254,0.1);
+    color: #3468FE;
+  }
+  .try-bt-no{
+    background-color: #101115;
+    color: #3D3F50;
+  }
+}

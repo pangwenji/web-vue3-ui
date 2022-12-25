@@ -1,0 +1,96 @@
+.share-dialog{
+	user-select:none;
+	.share-content{
+		ul>li{
+			padding: 8px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&>div{
+				display: flex;
+				align-items: center;
+				span{
+					margin-right: 6px;
+				}
+			}
+			.pwd{
+				padding: 4px 6px;
+				letter-spacing: 6px;
+				background: #f5f5f7;
+				border-radius: 5px
+			}
+		}
+		.el-dropdown-link{
+			margin-right: 0;
+			padding: 6px 14px;
+			background-color: #f5f5f7;
+			border-radius: 16px;
+		}
+		.share-bottom{
+			display: flex;
+			justify-content: space-between;
+			.el-button{
+				width: 150px;
+			}
+		}
+	}
+	.share-wechat{
+		.qrcode{
+			padding: 50px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img{
+				width: 140px;
+				height: 140px;
+			}
+			span{
+				padding: 10px 0;
+			}
+		}
+	}
+	.share-link{
+		:deep(.el-textarea__inner){
+			margin-bottom: 16px;
+			resize: none;
+			--el-input-hover-border-color: var(--el-border-color);
+			--el-input-clear-hover-color: var(--el-border-color);
+			--el-input-focus-border-color: var(--el-border-color);
+		}
+	}
+	.sharebtn{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.el-button{
+			margin: 6px 0;
+			width: 100%;
+		}
+	}
+	:deep(.el-dialog){
+		margin-top: 15vh!important;
+		.el-dialog__header{
+			margin-right: 0!important;
+		}
+		.my-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.title-btn{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 4px;
+			}
+			.title-btn:hover{
+				border-radius: 5px;
+				background-color: #eaeaee;
+			}
+		}
+	}
+	:deep(.el-dialog__body){
+		padding: 10px 20px;
+	}
+}

@@ -1,0 +1,221 @@
+.material-left {
+  width: 200px;
+  height: 100%;
+  flex-shrink: 0;
+  padding: 28px 7px 0 8px;
+  box-sizing: border-box;
+  color: #9094A6;
+  box-shadow: 3px 0px 6px 0px rgb(35 35 35 / 38%);
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .menuList-box {
+    display: inline-flex;
+  }
+
+  .menu-item {
+    //width: 120px;
+    height: 40px;
+    padding: 0 12px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    .icon-buy {
+      background-image: url("@/assets/images/icon_shoppingcar.png");
+    }
+
+    .icon-quanbu {
+      background-image: url("@/assets/icons/clouddisk/icon_quanbuwenjian@2x.png");
+    }
+
+    .icon-file {
+      background-image: url("@/assets/material/11-2.png");
+    }
+
+    .icon-shoucang {
+      background-image: url("@/assets/material/11-6@2x.png");
+    }
+
+    .icon-Purchased {
+      background-image: url("@/assets/icons/clouddisk/icon_Purchased@2x.png");
+    }
+
+    .icon-recycle {
+      background-image: url("@/assets/icons/clouddisk/icon_huishouzhan@2x.png");
+    }
+
+
+    .icon-share {
+      background-image: url("@/assets/icons/clouddisk/icon_share@2x.png");
+    }
+
+    .commercial{
+      display: inline-block;
+      width: 64px;
+      height: 18px;
+      margin: 2px 0 0 10px;
+      line-height: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #0A0B0D;
+      background: linear-gradient(135deg, #DF82C9 0%, #72E7FC 0%, #7B5EDF 100%);
+      border-radius: 9px;
+    }
+
+  }
+
+  .shoppingCart {
+    height: 58px;
+    background: #1D1D1D;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .shoppingCart-icon {
+      width: 36px;
+      height: 36px;
+      margin-right: 5px;
+    }
+
+  }
+
+  .active-menu {
+    border-radius: 8px;
+    background: #4e5262;
+    color: white;
+
+    .icon-shoucang {
+      background-image: url("@/assets/material/11-9.png");
+    }
+
+    .icon-quanbu {
+      background-image: url("@/assets/material/11.png");
+    }
+
+    .icon-file {
+      background-image: url("@/assets/material/11-3.png");
+    }
+
+    .icon-Purchased {
+      background-image: url("@/assets/material/11-5.png");
+    }
+  }
+
+  .menu-item:hover {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #4e5262;
+    color: white;
+    .icon-shoucang {
+      background-image: url("@/assets/material/11-9.png");
+    }
+
+    .icon-quanbu {
+      background-image: url("@/assets/material/11.png");
+    }
+
+    .icon-file {
+      background-image: url("@/assets/material/11-3.png");
+    }
+
+    .icon-Purchased {
+      background-image: url("@/assets/material/11-5.png");
+    }
+
+  }
+}
+
+.workspace-admin-sidebar {
+  padding: 34px 10px;
+  flex: none;
+
+  .admin-sidebar-main {
+    background: #2d2f3c;
+    border-radius: 10px;
+    color: #9094a6;
+    font-size: 14px;
+
+    .admin-sidebar-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      cursor: pointer;
+
+      .sidebar-title-icon {
+        color:#9094A6;
+      }
+    }
+
+    .admin-sidebar-container {
+      overflow: hidden;
+      transition: height .3s ease;
+    }
+
+    .admin-sidebar-content {
+      padding: 10px;
+      border-top: 1px solid rgba(151, 151, 151, 0.1);
+
+      .admin-sidebar-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+
+        .icon-frequency {
+          background-image: url("@/assets/icons/clouddisk/icon_audio frequency@2x.png");
+        }
+
+        .icon-home {
+          background-image: url("@/assets/icons/clouddisk/icon_home@2x.png");
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+
+        &.hover-active:hover {
+          color: #ffffff;
+          background: #4e5262;
+          .icon-frequency {
+            background-image: url("@/assets/material/11-11.png");
+          }
+
+          .icon-home {
+            background-image: url("@/assets/material/11-10.png");
+          }
+        }
+
+        &.active {
+          color: #ffffff;
+          background: #4e5262;
+          .icon-frequency {
+            background-image: url("@/assets/material/11-11.png");
+          }
+
+          .icon-home {
+            background-image: url("@/assets/material/11-10.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+.material-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
